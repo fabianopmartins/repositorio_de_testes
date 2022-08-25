@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<link href="/css/style2.css" rel="stylesheet">
+</head>
+<div id="formRoleModal" class="modal fade" role="dialog"
+	th:fragment="formRole" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header" style="background: #093159;">
+				<h4 class="modal-title">
+					<span style="font-weight: bold; color: white;">Cadastra Tipo
+						de Usuário</span>
+				</h4>
+			</div>
+
+			<form th:action="@{/usuario/salvaRole}" method="post"
+				th:object="${role}" id="altera-role-form">
+
+				<!-- Input values -->
+				<div class="modal-body container col-md-8">
+					<div class="form-row" align="center">
+						<div class="modal-body container col-md-10">
+							<div class="form-group">
+								<label>Descrição</label><input type="text"
+									th:field="*{nomeRole}" name="nota" class="form-control"
+									required="required" />
+							</div>
+						</div>
+					</div>
+
+					<!-- buttons -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</html>

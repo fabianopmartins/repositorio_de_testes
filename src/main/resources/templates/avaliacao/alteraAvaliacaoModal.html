@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<link href="/css/style2.css" rel="stylesheet">
+</head>
+<div id="alteraAvaliacaoModal" class="modal fade" role="dialog"
+	th:fragment="alteraAvaliacao" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header" style="background: #093159;">
+				<h4 class="modal-title">
+					<span style="font-weight: bold; color: white;">Alterar
+						Avaliação</span>
+				</h4>
+			</div>
+
+			<form th:action="@{/avaliacao/altera}" method="post"
+				th:object="${avaliacao}" id="altera-avaliacao-form">
+
+				<!-- Input values -->
+				<div class="modal-body container col-md-8">
+					<div class="form-row" align="center">
+						<div class="form-group col-md-10 mt-3" hidden="">
+							<label>ID</label> <input type="text" th:field="*{id}"
+								id="inputAvaliacaoId" class="form-control col-sm-3"
+								readonly="readonly" required="required" />
+						</div>
+						<div class="form-group mt-3" align="center">
+							<label>Nota</label><input type="number" th:field="*{nota}"
+								name="nota" class="form-control" required="required" />
+						</div>
+						<div class="form-group mt-3" align="center">
+							<label>Prova</label><select
+								class="form-control" id="inputOfertaAvaliação" th:field="*{prova}"
+								style="width: 215px;">
+									<option th:each="prova: ${provas}" th:value="${prova.id}"
+										th:text="${prova.nome}" />
+							</select>
+						</div>
+						<div class="form-group mt-3" align="center">
+							<label>Aluno</label><select
+								class="form-control" id="inputOfertaAvaliação"
+								th:field="*{usuario}" style="width: 215px;">
+									<option th:each="usuario: ${usuarios}" th:value="${usuario.id}"
+										th:text="${usuario.nome}" />
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<!-- buttons -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-primary">Salvar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</html>

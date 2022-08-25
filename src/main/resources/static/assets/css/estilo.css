@@ -1,0 +1,393 @@
+body{
+background-image: url("../../assets/images/Component%202.svg");
+background-image: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+
+.metisMenu.nav > li > a {
+  color: #fff; 
+  font-size:18px;
+  }
+  .metisMenu.nav > li > a:hover, .metisMenu.nav > li > a:focus {
+    color: #e8c888; }
+.nav-second-level.nav li a, .nav-thrid-level.nav li a {
+  color: #fff; }
+
+.nav-second-level.nav li a:hover, .nav-second-level.nav li a:focus, .nav-thrid-level.nav li a:hover, .nav-thrid-level.nav li a:focus {
+  color: #e8c888; }
+
+
+.nav-second-level.nav li.active a {
+  color: #e8c888; }
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #5862A6;
+    border-color: #5862A6;
+}
+
+.metisMenu.nav > li.active > a {
+    color: #e8c888;
+}
+
+.card-header{
+
+    DISPLAY: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.card{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.thed {
+    
+    text-align: center;
+    background-color: white;
+    color: white;
+
+     }
+tr{
+
+    text-align: start;
+    color: #5862A6;
+ }   
+ 
+ th{
+     text-align: center;
+     color: #5862A6;
+ }
+
+ .footer{
+     text-align: center;
+     color: white;
+ }
+
+ .btn1{
+    margin-top: 30px;
+ }
+h4{
+    color: #5862A6;
+}
+
+i.mdi.mdi-border-color{
+    
+    margin-right: 10px;
+    top: 106px;
+    font-size: 2em;
+}
+
+
+i.mdi.mdi-delete{
+    
+    
+    margin-right: 30px;
+    
+    font-size: 2em;
+}
+
+#main{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.9;
+    margin-top: 30px;
+}
+
+.b{
+    margin-top: 25px;
+}
+/*
+Nome do Template: Feira Virtual SENAC 2020 | Projeto Integrador Template
+Autor: ADS/SENAC
+Arquivo: estilo.css
+*/
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: #5862A6;	
+    color: white;
+    font-weight: 700;
+}
+.nav-tabs > li > a {
+    color: #626773;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/*Altera a cor da tabela*/
+.table {
+    color: #5862A6;
+}
+
+/*Altera a cor das linhas impares*/
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+
+/* -----------------------form elements --------------------------------*/
+.header-title{ 
+    color: #5862A6 !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.control-label{
+    color: #5862A6 !important;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left !important;
+}
+
+.form-control {
+    border: 1px solid #5862A6;
+    border-radius: 4px !important;
+    padding: 7px 12px;
+    height: 38px;
+    max-width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn{
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius:5px;
+}
+
+
+.btn-azul{
+  background: #5862A6;
+  color: white;
+  box-shadow:0 5px #8e95c4;  
+}
+.btn-azul:hover{
+  background: #5862A6;
+  color: white;
+  box-shadow:0 5px #5862A6;  
+}
+.btn-azul:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+  
+}
+
+
+.btn-vermelho{
+  background: #d57171;
+  color: #FFF;
+  box-shadow:0 5px #e6a9a9;  
+}
+.btn-vermelho:hover{
+  background: #d57171;
+  color: #FFF;
+  box-shadow:0 5px #d57171;  
+}
+.btn-vermelho:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+  
+}
+
+
+
+.btn-amarelo{
+  background: #e2ab3b;
+  color: #fff;
+  box-shadow:0 5px #e8c888;  
+}
+.btn-amarelo:hover{
+  background: #e2ab3b;
+  color: #fff;
+  box-shadow:0 5px #e2ab3b;  
+}
+.btn-amarelo:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+ }
+
+.btn-cadastro{
+  background: #5862A6;
+  color: white;
+  box-shadow:0 5px #8e95c4;;  
+}
+.btn-cadastro:hover{
+  background: #5862A6;
+  color: white;
+  box-shadow:0 5px #5862A6;
+}
+
+.panel-default > .panel-heading {
+    background-color: #5862A6;
+    border-bottom: none;
+    color: #ffffff;
+    background-color: #5862A6;
+    font-size: 24;
+}
+
+.modal-dialog > body{
+color: #5862A6;
+background-color: #5862A6;
+
+}
+
+.btn-info {
+    background-color: #5862A6  !important;
+    border: 1px solid  #5862A6 !important;
+}
+
+
+.panel-primary > .panel-heading {
+    background-color: #5862A6;
+    font-size: 24;
+}
+
+/*
+Nome do Template: Feira Virtual SENAC 2020 | Projeto Integrador Template
+Autor: ADS/SENAC
+Arquivo: estilo.css
+*/
+
+
+.panel-default > .panel-heading {
+    background-color: #5862A6;
+    border-bottom: none;
+    color: #ffffff;
+    font-size: 24;
+}
+
+
+.panel-primary > .panel-heading {
+    background-color: #5862A6;
+    font-size: 24;
+}
+
+.swal2-icon.swal2-warning {
+    color: #ef6504;
+    border-color: #ef6504;;
+}
+
+.btn-color {
+    background-color: #5862A6 !important;
+}
+
+/*epa */
+
+
+/* Text colors */
+.text-custom {
+  color: #5962a7; }
+
+/* Background colors */
+.bg-custom {
+  background-color: #5962a7 !important; }
+
+.label-custom {
+  background-color: #5962a7; }
+
+.btn-custom {
+  background-color: #5962a7;
+  border-color: #5962a7; }
+
+.btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active,
+.btn-custom.focus, .btn-custom:active, .btn-custom:focus, .btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+  background-color: #5962a7 !important;
+  border: 1px solid #5962a7 !important; }
+
+.btn-primary {
+  background-color: #5962a7 !important;
+  border: 1px solid #5962a7 !important; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #5962a7 !important;
+  border: 1px solid #5962a7 !important; }
+
+.btn-info {
+  background-color: #5962a7 !important;
+  border: 1px solid #5962a7 !important; }
+
+.btn-bordered.btn-custom {
+  background-color: #5962a7;
+  border-bottom: 2px solid #5962a7 !important; }
+
+.panel-custom > .panel-heading {
+  background-color: #5962a7; }
+
+.panel-primary > .panel-heading {
+  background-color: #5962a7; }
+
+.progress-bar-custom {
+  background-color: #5962a7; }
+
+.form-control {
+  border: 1.3px solid #5962a7;
+  color: #5962a7c7;
+  border-radius: 16px;}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5962a7;
+  opacity: .8; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #5962a7c7;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #5962a7c7;
+}
+
+.input-sm {
+  line-height: 1.5; 
+  border-radius: 13px; }
+
+.input-group-addon {
+  color: #5962a7;}
+
+.checkbox-custom input[type="checkbox"]:checked + label::before {
+  background-color: #5962a7;
+  border-color: #5962a7; }
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #5962a7;
+  border-color: #5962a7; }
+
+.checkbox-info input[type="checkbox"]:checked + label::before {
+  background-color: #5962a7;
+  border-color: #5962a7; }
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5962a7;
+  border-color: #5962a7; }
+
+.radio label::after {
+      background-color: #5962a7;
+}
+
+.radio-custom input[type="radio"] + label::after {
+  background-color: #5962a7; }
+.radio-custom input[type="radio"]:checked + label::before {
+  border-color: #5962a7; }
+.radio-custom input[type="radio"]:checked + label::after {
+  background-color: #5962a7; }
+
+.radio-primary input[type="radio"] + label::after {
+  background-color: #5962a7; }
+.radio-primary input[type="radio"]:checked + label::before {
+  border-color: #5962a7; }
+.radio-primary input[type="radio"]:checked + label::after {
+  background-color: #5962a7; }

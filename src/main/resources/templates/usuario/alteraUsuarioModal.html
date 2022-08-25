@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<link href="/css/style2.css" rel="stylesheet">
+</head>
+<div id="alteraUsuarioModal" class="modal fade" role="dialog"
+	th:fragment="alteraUsuario" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header" style="background: #093159;">
+				<h4 class="modal-title">
+					<span style="font-weight: bold; color: white;">Alterar
+						Usuário</span>
+				</h4>
+			</div>
+
+			<form th:action="@{/usuario/altera}" method="post"
+				th:object="${usuario}" id="altera-usuario-form">
+
+				<!-- Input values -->
+				<div class="modal-body container col-md-8">
+					<div class="form-row" align="center">
+						<div class="form-group col-md-10 mt-3" hidden="">
+							<label>ID</label> <input type="text" th:field="*{id}"
+								id="inputUsuarioId" class="form-control col-sm-3"
+								readonly="readonly" required="required" />
+						</div>
+						<div class="modal-body container col-md-10">
+							<div class="form-group">
+								<label>Nome</label><input type="text" th:field="*{nome}"
+									name="nota" class="form-control" required="required" />
+							</div>
+						</div>
+						<div class="modal-body container col-md-10">
+							<div class="form-group">
+								<label>E-mail</label><input type="email" th:field="*{email}"
+									name="nota" class="form-control" required="required" />
+							</div>
+						</div>
+						<span sec:authorize="hasRole('ROLE_ADMIN')">
+						<div class="modal-body container col-md-8">
+							<label>Tipo de Usuário</label><select th:field="*{roles}">
+								<option th:each="role : ${roles}" th:value="${role.nomeRole}"
+									th:if="${role.nomeRole.equals('ROLE_ADMIN')}">Administrador</option>
+								<option th:each="role : ${roles}" th:value="${role.nomeRole}"
+									th:if="${role.nomeRole.equals('ROLE_TEACHER')}">Professor</option>
+								<option th:each="role : ${roles}" th:value="${role.nomeRole}"
+									th:if="${role.nomeRole.equals('ROLE_STUDENT')}">Aluno</option>
+							</select>
+						</div>
+					</span>
+						<div>
+							<div class="modal-body container col-md-4">
+								<label>Permissões</label><select multiple="multiple"
+									th:field="*{permissoes}"
+									style="width: 250px; margin-left: -90px;">
+									<option value="">Selecione</option>
+									<option th:each="permissao : ${permissoes}"
+										th:value="${permissao.nomePermissao}"
+										th:if="${permissao.nomePermissao.equals('insert')}">Gravar</option>
+									<option th:each="permissao : ${permissoes}"
+										th:value="${permissao.nomePermissao}"
+										th:if="${permissao.nomePermissao.equals('alter')}">Alterar</option>
+									<option th:each="permissao : ${permissoes}"
+										th:value="${permissao.nomePermissao}"
+										th:if="${permissao.nomePermissao.equals('delete')}">Deletar</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<!-- buttons -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</html>
